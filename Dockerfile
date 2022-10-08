@@ -40,7 +40,7 @@ RUN aws s3 cp /build/statics s3://${S3_BUCKET_NAME}/ --recursive && \
 
 #----- Build docker image ----
 
-FROM nginx:1.21.3-alpine
+FROM nginx:1.22-alpine
 
 COPY nginx_default.conf /etc/nginx/conf.d/default.conf
 
